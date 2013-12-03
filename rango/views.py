@@ -16,3 +16,9 @@ def index(request):
 
     # Render the response and send it back!
     return render_to_response('rango/index.html', context_dict, context)
+
+def about(request):
+	# return HttpResponse("Rango Says: Here is the about page.") # FIRST EXAMPLE
+	context = RequestContext(request)
+	context_dict = {'boldmessage': 4 + 4}
+	return render_to_response('rango/about.html', context_dict, context)
