@@ -2,6 +2,7 @@ import os
 
 def populate():
     python_cat = add_cat('Python')
+        views = 15
 
     add_page(cat=python_cat,
         title="Official Python Tutorial",
